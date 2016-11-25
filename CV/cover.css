@@ -126,8 +126,8 @@ body {
   padding: 30px;
 }
 
-
-@media (min-width: 768px) {
+/* MOBILE */
+@media (min-width: 992px) {
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
@@ -140,5 +140,35 @@ body {
 @media (min-width: 992px) {
   .cover-container {
     width: 700px;
+  }
+}
+@media only screen and (max-width: 992px) {
+
+   .site-header-brand { 
+    font-size: 20px; 
+    position: relative;
+    float: none;
+  }
+  .site-header-brand:hover{
+    font-size: 23px;
+    transition: font-size 0.5s ease;
+  }
+   .site-wrapper-inner {
+    position: relative;
+    display: block;
+  }
+   .right{
+    right: auto;
+   }
+  .hvr-grow {     
+      font-size:16px;
+      transition: font-size 0.5s ease;
+  }
+  .hvr-grow:hover{
+    font-size:20px;
+    transition: font-size 0.5s ease;
+  }
+  #one h1{
+    font-size : 40px;
   }
 }
