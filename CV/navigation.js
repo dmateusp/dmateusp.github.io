@@ -6,6 +6,16 @@ $('#three').css( "top", h );
 $(document.documentElement).keyup(function (event) {
 	console.log(pos);
 	console.log(event.keyCode);
+	// MOBILE
+	$(document).on("swiperight",function(){
+  		if(pos == 1){
+	 		$('#one').animate({left: '-='+w}, "medium");
+			$('#two').animate({left: '-='+ w}, "medium");
+			pos = 2;
+  		}
+	});
+
+	// DESKTOP
 	if (event.keyCode == 37 && pos == 2) {
 		$('#one').animate({left:'+='+w}, "medium");
 		$('#two').animate({left:'+='+w}, "medium");
