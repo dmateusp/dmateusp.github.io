@@ -9,4 +9,12 @@ $( document ).ready(function() {
 	        $(this).addClass('fa-envelope-o')
 	       }
 	)
+	$('.heartbeat').hover(
+	       function(){
+	        $('i#heart').addClass('beating')
+	       },
+	       function(){
+	       	$('i#heart').removeClass('beating')
+	       }
+	)
 });
