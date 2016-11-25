@@ -29,15 +29,18 @@ $(document.documentElement).keyup(function (event) {
 
 	}
 });
-alert("hey");
 // MOBILE
 $(document).on("swiperight",function(){
-		if(pos == 1){
-	 		$('#one').animate({left: '-='+w}, "medium");
-			$('#two').animate({left: '-='+ w}, "medium");
-			pos = 2;
-		}
-		alert("swiperight");
+	if(pos == 2){
+		$('#one').animate({left:'+='+w}, "medium");
+		$('#two').animate({left:'+='+w}, "medium");
+		pos = 1;
+	}
+	else if(pos == 3){
+		$('#one').animate({left: '+='+w}, "medium");
+		$('#two').animate({left: '+='+ w}, "medium");
+		pos = 2;
+	}
 });
 $(document).on("swipeleft",function(){
 		if(pos == 1){
@@ -45,5 +48,9 @@ $(document).on("swipeleft",function(){
 			$('#two').animate({left: '-='+ w}, "medium");
 			pos = 2;
 		}
-		alert("swipeleft");
+		else if(pos == 2){
+			$('#one').animate({left: '-='+w}, "medium");
+			$('#two').animate({left: '-='+ w}, "medium");
+			pos = 3;
+		}
 });
