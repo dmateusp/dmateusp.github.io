@@ -8,7 +8,7 @@ $( document ).ready(function() {
 	       	$(this).removeClass('fa-envelope')
 	        $(this).addClass('fa-envelope-o')
 	       }
-	)
+	);
 	$('.heartbeat').hover(
 	       function(){
 	        $('i#heart').addClass('beating')
@@ -16,5 +16,10 @@ $( document ).ready(function() {
 	       function(){
 	       	$('i#heart').removeClass('beating')
 	       }
-	)
+	);
+	$('.cntl').cntl({
+		revealbefore: 300,
+		anim_class: 'cntl-animate',
+		onreveal: null
+	});
 });

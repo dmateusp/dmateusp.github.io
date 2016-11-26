@@ -21,7 +21,10 @@ html,body{
   align-content: center;
 }
 .right{
-  right:25px;
+  margin-left:auto;
+  right:10px; bottom:0;
+  left:auto; top:0;
+  float:left;
 }
 ul {
   list-style-type: none;
@@ -29,15 +32,25 @@ ul {
 #arrow-bottom{
   font-size: 30px;
 }
-#heart {
-  font-size: 400px;
-  color: black;
+#arrow-right{
+  font-size: 30px;
+}
+#arrow-bottom{
+  font-size: 30px;
+}
+#three:after{
+  content: "\f004"; 
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
   position: absolute;
-  top:15%; bottom:0;
-  left: 0; right: 0;
-  margin: auto;
-  transition: color 1.5s ease;
-  transition: font-size 0.6s ease;
+  font-size: 400px;
+  transition: color 3s ease;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0 0 -200px;
+  z-index: 0;
 }
 
 .site-header-brand{
@@ -79,6 +92,7 @@ ul {
     position: absolute;
     top: 0px; width: 100%; height: 100%;
   background-color: white;
+  color: black;
 }
 #four {
     position: absolute;
@@ -98,13 +112,24 @@ ul {
   font-weight: 400;
   line-height: 38px;
   margin-top: 30px;
-  transition: color 0.6s ease;
+  color: black;
+  transition: color 3s ease;
 }
-#heart.beating{
-  color:red;
-  transition: color 1.5s ease;
-  font-size: 500px;
-  transition: font-size 0.6s ease;
+.heartbeat.beating{
+  color: red;
+  transition: color 3s ease;
+}
+#three.beating{
+  color:red !important;
+  transition: color 3s ease !important;
+}
+#kermit {
+  position: absolute;
+      top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
 }
 /*
  * Globals
