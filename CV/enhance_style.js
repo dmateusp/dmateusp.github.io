@@ -17,9 +17,14 @@ $( document ).ready(function() {
 	       	$('i#heart').removeClass('beating')
 	       }
 	);
-	$('.cntl').cntl({
-		revealbefore: 300,
-		anim_class: 'cntl-animate',
-		onreveal: null
-	});
+
+    $('#countdown').countdown({
+        date: '06/17/2017 00:00:00',
+        offset: 0,
+        day: 'Day',
+        days: 'Days'
+    }, function () {
+        alert('Graduated!');
+    });
+
 });
