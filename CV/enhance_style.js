@@ -9,14 +9,6 @@ $( document ).ready(function() {
 	        $(this).addClass('fa-envelope-o')
 	       }
 	);
-	$('.heartbeat').hover(
-	       function(){
-	        $('i#heart').addClass('beating')
-	       },
-	       function(){
-	       	$('i#heart').removeClass('beating')
-	       }
-	);
 
     $('#countdown').countdown({
         date: '06/17/2017 00:00:00',

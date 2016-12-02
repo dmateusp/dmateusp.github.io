@@ -33,19 +33,7 @@ $(document.documentElement).keyup(function (event) {
 
 	}
 });
-//HEARTBEAT
-function heartbeating(i){
-	if (i%2 == 0){
-		$('#three').addClass('beating');
-	} else {
-		$('#three').removeClass('beating');			
-	}
-}
-var i = 0;
-setInterval(function(){
-	heartbeating(i);
-	i++;
-}, 700+Math.random()*500);	
+
 
 // MOBILE
 $(document).on("swiperight",function(){
