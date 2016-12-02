@@ -23,15 +23,6 @@ $(document.documentElement).keyup(function (event) {
 		$( "#three" ).toggle( "slide", {direction:"down"} );
 		pos = 3;
 	}	
-	else if (event.keyCode == 39 && pos == 3) {
-		$( "#four" ).toggle( "slide", {direction:"right"} );
-		pos = 4;
-	}
-	else if (event.keyCode == 37 && pos == 4) {
-		$( "#four" ).hide( "slide", {direction:"right"} );
-		pos = 3;
-
-	}
 });
 
 
