@@ -28,10 +28,10 @@ $(document.documentElement).keyup(function (event) {
 
 // MOBILE
 $(document).on("swiperight",function(){
-	if(pos == 1){
-		$( "#two" ).toggle( "slide", {direction:"right"} );
-		pos = 2;
-	}
+
+	$( "#two" ).toggle( "slide", {direction:"right"} );
+	pos = 2;
+
 });
 $(document).on("swipeleft",function(){
 	if(pos == 2){
