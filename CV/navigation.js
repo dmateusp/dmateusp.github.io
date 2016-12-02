@@ -28,26 +28,14 @@ $(document.documentElement).keyup(function (event) {
 
 // MOBILE
 $(document).on("swiperight",function(){
-	if(pos == 2){
-		$('#one').animate({left:'+='+w}, "medium");
-		$('#two').animate({left:'+='+w}, "medium");
-		pos = 1;
-	}
-	else if(pos == 3){
-		$('#one').animate({left: '+='+w}, "medium");
-		$('#two').animate({left: '+='+ w}, "medium");
+	if(pos == 1){
+		$( "#two" ).toggle( "slide", {direction:"right"} );
 		pos = 2;
 	}
 });
 $(document).on("swipeleft",function(){
-		if(pos == 1){
-	 		$('#one').animate({left: '-='+w}, "medium");
-			$('#two').animate({left: '-='+ w}, "medium");
-			pos = 2;
-		}
-		else if(pos == 2){
-			$('#one').animate({left: '-='+w}, "medium");
-			$('#two').animate({left: '-='+ w}, "medium");
-			pos = 3;
-		}
+	if(pos == 2){
+		$( "#two" ).hide( "slide", {direction:"right"} );
+		pos = 1;
+	}
 });
