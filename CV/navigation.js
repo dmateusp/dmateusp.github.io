@@ -28,14 +28,27 @@ $(document.documentElement).keyup(function (event) {
 
 // MOBILE
 $(document).on("swiperight",function(){
-
-	$( "#two" ).toggle( "slide", {direction:"right"} );
-	pos = 2;
-
-});
-$(document).on("swipeleft",function(){
 	if(pos == 2){
 		$( "#two" ).hide( "slide", {direction:"right"} );
 		pos = 1;
 	}
+});
+$(document).on("swipeleft",function(){
+
+	if(pos == 1){
+		$( "#two" ).toggle( "slide", {direction:"right"} );
+		pos = 2;
+	}
+});
+
+var iScrollPos = 0;
+$(window).scroll(function () {
+    var iCurScrollPos = $(this).scrollTop();
+    if (iCurScrollPos > iScrollPos) {
+    	$( "#three" ).toggle( "slide", {direction:"down"} );
+		pos = 3;
+    } else {
+       //Scrolling Up
+    }
+    iScrollPos = iCurScrollPos;
 });
