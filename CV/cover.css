@@ -822,12 +822,18 @@ body {
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 767px) {
+  li {
+    display: block;
+    left: auto !important;
+    right: auto !important;
+  }
 
   .timeline>li .timeline-image {
     position: relative;
     width: 100px;
     height: 100px;
     margin-bottom:0px;
+    display:block;
   }
   .timeline>li:nth-child(even) .timeline-image {
     left: 0;
