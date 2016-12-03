@@ -827,6 +827,7 @@ body {
     left: auto !important;
     right: auto !important;
     height: auto !important;
+    margin-bottom:0px !important;
   }
 
   .timeline>li .timeline-image {
