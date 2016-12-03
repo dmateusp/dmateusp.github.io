@@ -48,13 +48,31 @@ ul {
 #arrow-right{
   font-size: 30px;
 }
+.symbolic{
+  font-size: 70px;
+}
+
 #arrow-left{
   font-size: 30px;
 }
 #arrow-left > li > a {
   color: black;
+  position: fixed;
+  float: left;
+  left: 10px;
+  top: 40%;
+  font-size: 30px;
 }
 #arrow-up{
+  color: black;
+  position: fixed;
+  float: left;
+  top: 0px;
+  z-index: 200;
+  vertical-align: middle;
+  left: 30px;
+  right:auto;
+
   font-size: 30px;
 }
 #arrow-up > li > a {
@@ -62,6 +80,7 @@ ul {
 }
 #arrow-bottom{
   font-size: 30px;
+  bottom: 10px;
 }
 
 
@@ -819,6 +838,7 @@ body {
   .timeline > li .line {
     display: none;
   }
+
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 767px) {
@@ -828,6 +848,18 @@ body {
     right: auto !important;
     height: auto !important;
     margin-bottom:0px !important;
+  }
+  #arrow-bottom{
+    font-size: 25px;
+    bottom: 10px;
+    position: absolute;
+  }
+  #arrow-right{
+    font-size: 25px;
+    bottom: 150px !important;
+    top: auto !important;
+    position: absolute;
+    right: 0px;
   }
 
   .timeline>li .timeline-image {
