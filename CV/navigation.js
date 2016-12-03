@@ -24,7 +24,7 @@ $(document.documentElement).keyup(function (event) {
 		pos = 3;
 	}	
 });
-
+// MOBILE
 function goBottom(){
 	$( "#three" ).toggle( "slide", {direction:"down"} );
 	pos = 3;
@@ -41,29 +41,3 @@ function goLeft(){
 	$( "#two" ).hide( "slide", {direction:"right"} );
 	pos = 1;
 }
-// MOBILE
-$(document).on("swiperight",function(){
-	if(pos == 2){
-		$( "#two" ).hide( "slide", {direction:"right"} );
-		pos = 1;
-	}
-});
-$(document).on("swipeleft",function(){
-
-	if(pos == 1){
-		$( "#two" ).toggle( "slide", {direction:"right"} );
-		pos = 2;
-	}
-});
-
-var iScrollPos = 0;
-$(window).scroll(function () {
-    var iCurScrollPos = $(this).scrollTop();
-    if (iCurScrollPos > iScrollPos) {
-    	$( "#three" ).toggle( "slide", {direction:"down"} );
-		pos = 3;
-    } else {
-       //Scrolling Up
-    }
-    iScrollPos = iCurScrollPos;
-});
