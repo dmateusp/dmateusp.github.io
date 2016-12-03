@@ -826,6 +826,7 @@ body {
     display: block;
     left: auto !important;
     right: auto !important;
+    height: auto !important;
   }
 
   .timeline>li .timeline-image {
