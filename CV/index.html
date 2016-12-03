@@ -75,17 +75,21 @@
 
         <ul id="arrow-bottom" class="site-header-brand bottom">
 
-            <li><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> - (events)</li>
+            <li><a class="fa fa-arrow-circle-down clickable" aria-hidden="true" onclick="goBottom()"></a> - (events)</li>
         </ul>
         <ul id="arrow-right" class="site-header-brand right" style="top:50%;  margin:auto;">
 
-            <li>(exp/studies) - <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></li>
+            <li>(exp/studies) - <i class="fa fa-arrow-circle-right clickable" aria-hidden="true" onclick="goRight()"></i></li>
         </ul>
 
      </div>
 
     </div>
     <div class="site-wrapper" id="two">
+        <ul id="arrow-left" class="site-header-brand bottom">
+
+            <li><a class="fa fa-arrow-circle-left clickable" aria-hidden="true" onclick="goLeft()"></a></li>
+        </ul>
         <h1>
             Experiences & Studies
         </h1>
@@ -225,6 +229,10 @@
 
     </div>
 	<div class="site-wrapper" id="three">
+    <ul id="arrow-up" class="site-header-brand bottom">
+
+        <li><a class="fa fa-arrow-circle-up clickable" aria-hidden="true" onclick="goTop()"></a></li>
+    </ul>
     <h1>
         Participation to events (2016)
     </h1>

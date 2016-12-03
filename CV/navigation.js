@@ -25,7 +25,22 @@ $(document.documentElement).keyup(function (event) {
 	}	
 });
 
-
+function goBottom(){
+	$( "#three" ).toggle( "slide", {direction:"down"} );
+	pos = 3;
+}
+function goTop(){
+		$( "#three" ).hide( "slide", {direction:"down"} );
+		pos = 1;
+}
+function goRight(){
+	$( "#two" ).toggle( "slide", {direction:"right"} );
+	pos = 2;
+}
+function goLeft(){
+	$( "#two" ).hide( "slide", {direction:"right"} );
+	pos = 1;
+}
 // MOBILE
 $(document).on("swiperight",function(){
 	if(pos == 2){
