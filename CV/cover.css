@@ -848,8 +848,8 @@ body {
   }
   .timeline>li .timeline-image {
     position: static;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin-bottom:0px;
   }
   .timeline>li:nth-child(even) .timeline-image {
