@@ -848,7 +848,7 @@ body {
     margin-left: 0;
   }
   .timeline>li:nth-child(odd) .timeline-image {
-    float:right;
+
     left: 0px;
     margin-left:0;
   }
