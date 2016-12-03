@@ -836,16 +836,7 @@ body {
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 767px) {
-  .timeline > li:nth-child(even) {
-    margin-bottom: 0px;
-    min-height: 0px;
-    right: 0px;
-  }
-  .timeline > li:nth-child(odd) {
-    margin-bottom: 0px;
-    min-height: 0px;
-    left: 0px;
-  }
+
   .timeline>li .timeline-image {
     position: static;
     width: 100px;
