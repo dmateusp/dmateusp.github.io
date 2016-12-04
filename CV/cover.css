@@ -518,6 +518,12 @@ body {
     text-align: center;
     text-transform: uppercase;
   }
+  .modal {
+    text-align: left;
+  }
+  .progress{
+    margin-top:10px;
+  }
   #two h1{
     font-size: 50px;
     align-content: center;
