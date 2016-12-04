@@ -857,6 +857,12 @@ body {
     margin-bottom:0px !important;
   }
 
+#modal{
+  padding-top: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
   #arrow-bottom{
     font-size: 25px;
     bottom: 10px;
