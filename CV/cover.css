@@ -855,13 +855,7 @@ body {
   margin-left: 30px;
   margin-right: 30px;
 }
-  li {
-    display: block;
-    left: auto !important;
-    right: auto !important;
-    height: auto !important;
-    margin-bottom:0px !important;
-  }
+
 
 }
 /* Custom, iPhone Retina */
@@ -872,13 +866,6 @@ body {
     right: auto !important;
     height: auto !important;
     margin-bottom:0px !important;
-  }
-  .timeline>li:nth-child(even) {
-    margin-bottom: 0px;
-  }
-
-  .timeline>li:nth-child(odd) {
-    margin-bottom: 0px;
   }
 
 #modal{
@@ -940,13 +927,6 @@ body {
   margin-left: 30px;
   margin-right: 30px;
 }
-  .timeline>li:nth-child(even) {
-    margin-bottom: 0px;
-  }
-
-  .timeline>li:nth-child(odd) {
-    margin-bottom: 0px;
-  }
 
   .site-wrapper-inner {
     vertical-align: middle;
@@ -954,23 +934,9 @@ body {
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
-    li {
-    display: block;
-    left: auto !important;
-    right: auto !important;
-    height: auto !important;
-    margin-bottom:0px !important;
-  }
 }
 
 @media (min-width: 992px) {
-    li {
-    display: block;
-    left: auto !important;
-    right: auto !important;
-    height: auto !important;
-    margin-bottom:0px !important;
-  }
   .cover-container {
     width: 700px;
   }
@@ -979,29 +945,8 @@ body {
   margin-left: 30px;
   margin-right: 30px;
 }
-  .timeline>li:nth-child(even) {
-    margin-bottom: 0px;
-  }
-
-  .timeline>li:nth-child(odd) {
-    margin-bottom: 0px;
-  }
 }
 @media only screen and (max-width: 992px) {
-    li {
-    display: block;
-    left: auto !important;
-    right: auto !important;
-    height: auto !important;
-    margin-bottom:0px !important;
-  }
-    .timeline>li:nth-child(even) {
-    margin-bottom: 0px;
-  }
-
-  .timeline>li:nth-child(odd) {
-    margin-bottom: 0px;
-  }
 #modal{
   padding-top: 15px;
   margin-left: 30px;
