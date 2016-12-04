@@ -66,19 +66,18 @@ ul {
   color: black;
 }
 #arrow-up{
-  color: black;
   position: fixed;
   float: left;
-  top: 0px;
+  bottom: 10px;
   z-index: 300;
   vertical-align: middle;
-  left: 30px;
+  left: auto;
   right:auto;
-
   font-size: 30px;
 }
 #arrow-up > li > a {
   color: black;
+
 }
 #arrow-bottom{
   font-size: 30px;
@@ -514,7 +513,7 @@ body {
     display: inline-block;
     width: 100%;
     color: rgb(255, 255, 255);
-    background-color: black;
+    background-color:   #191970;
     padding: 5px;
     text-align: center;
     text-transform: uppercase;
@@ -528,7 +527,7 @@ body {
     align-content: center;
   }
   .event-list > li:nth-child(even) > time {
-    background-color: black;
+    background-color:     #191970;
   }
   .event-list > li > time > span {
     display: none;
