@@ -32,5 +32,11 @@ $( document ).ready(function() {
         });
     };
 
-
+    $('#formContact').submit(function(e) {
+        e.preventDefault();
+        
+        $('#myModal').modal('hide'); //or  $('#IDModal').modal('hide');
+        $('#formSuccess').show();
+        return false;
+    });
 });

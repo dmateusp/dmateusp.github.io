@@ -35,6 +35,10 @@
   <body>
 
     <div id="one" class="site-wrapper">
+        <div id="formSuccess" class="alert alert-success alert-dismissable collapse">
+          <a href="#" class="close" onclick="$('#formSuccess').hide()" aria-label="close">×</a>
+          <strong>Success!</strong> Message sent
+        </div>
 		<a class="site-header-brand" href="http://www.github.com/dmateusp" title="dmateusp">
             <i class="fa fa-github" aria-hidden="true"></i> dmateusp
         </a>
@@ -58,7 +62,7 @@
             </div>
             <ul>
                 <li style="display: inline"><div class="meta-info hvr-grow" style="padding-top: 50px;">
-                    <a href="mailto:dmateusp@gmail.com"><i id="mail" class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    <a href="#myModal" data-toggle="modal"><i id="mail" class="fa fa-envelope-o" aria-hidden="true"></i></a>
                     <h4>Contact</h4>
                 </div>
                 </li>
@@ -445,7 +449,7 @@
     </div>
     <div class="site-wrapper" id="four">
     </div>
-        <div id="modal" class="modal">
+        <div id="modal" class="modal mymodals">
             <div class="modal-header"><h1>Skills</h1></div>
             <div class="modal-content">
             <br/>
@@ -561,9 +565,21 @@
             <div class="modal-footer" style="text-align: center;">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
-
             <!--<div class="modal-content"><img src="./images/wordcloud.svg" style='stroke-width: 0px; background-color: black;'></img></div>-->
         </div>
+      </div>
+            <div id="myModal" class="modal mymodals">
+                  <div class="modal-content">
+                    <h3 id="myModalLabel">Contact me :)</h3>
+                    <form id='formContact' class="form-horizontal col-sm-12">
+                      <div class="form-group"><label>Name</label><input required class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
+                      <div class="form-group"><label>Message</label><textarea required class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
+                      <div class="form-group"><label>E-Mail</label><input required class="form-control email" placeholder="email@you.com (so I can answer you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
+                      <button id="contactButton" type="submit" class="btn btn-info">Send</button> 
+                      <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                    </form>
+                  </div>
+            </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
