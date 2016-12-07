@@ -8,18 +8,7 @@ $( document ).ready(function() {
 	       	$(this).removeClass('fa-envelope')
 	        $(this).addClass('fa-envelope-o')
 	       }
-	);
-
-    $('#countdown').countdown({
-        date: '06/17/2017 00:00:00',
-        offset: 0,
-        day: 'Day',
-        days: 'Days'
-    }, function () {
-        alert('Graduated!');
-    });
-    columnChart();
-    
+	);    
     function columnChart(){
         var item = $('.chart', '.column-chart').find('.item'),
         itemWidth = 100 / item.length;
@@ -38,5 +27,23 @@ $( document ).ready(function() {
         $('#myModal').modal('hide'); //or  $('#IDModal').modal('hide');
         $('#formSuccess').show();
         return false;
+    });
+});
+
+var app = angular.module("app", []);
+app.controller("eventsCtrl", function($scope, $http) {
+    $http.get('./data/events.json', {
+        "Content-Type": "application/json"
+    })
+       .then(function(res){
+          $scope.events = res.data;                
+    });
+});
+app.controller("skillsCtrl", function($scope, $http) {
+    $http.get('./data/skills.json', {
+        "Content-Type": "application/json"
+    })
+       .then(function(res){
+          $scope.skills = res.data;                
     });
 });

@@ -19,7 +19,7 @@
     <link src="./assets/jquery-ui/jquery-ui.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
+    <link href="./assets/css/cover.css" rel="stylesheet">
 
     <!-- Font awesome -->
 	<script src="https://use.fontawesome.com/826ae4b499.js"></script>
@@ -32,7 +32,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body ng-app="app">
 
     <div id="one" class="site-wrapper">
         <div id="formSuccess" class="alert alert-success alert-dismissable collapse">
@@ -240,346 +240,69 @@
     <div class="symbolic">
         <i class="fa fa-male" aria-hidden="true"></i> + <i class="fa fa-laptop" aria-hidden="true"></i> + <i class="fa fa-comments-o" aria-hidden="true"></i>
     </div class="symbolic">
-            <div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
-                <ul class="event-list">
-                    <li>
-                        <time datetime="2016-12-13">
-                            <span class="day">13</span>
-                            <span class="month">Dec</span>
-                            <span class="year">2016</span>
-                            <span class="time">18:00</span>
-                        </time>
-                        <img alt="NLP Meetup" src="https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/d/d/b/0/global_452336752.jpeg" />
-                        <div class="info">
-                            <h2 class="title">Natural language processing Meetup</h2>
-                            <p class="desc">Workday hosts an event about Natural language processing</p>
-                        </div>
-                        <div class="social">
-                            <ul>
-                                <li class="meetup" style="width:33%;"><a href="https://www.meetup.com/NLP-Dublin/events/235149644/"><span class="fa fa-meetup"></span></a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <time datetime="2016-11-24">
-                            <span class="day">24</span>
-                            <span class="month">Nov</span>
-                            <span class="year">2016</span>
-                            <span class="time">18:30</span>
-                        </time>
-                        <img alt="VR night" src="http://bdshop-o2zecwh.netdna-ssl.com/media/wysiwyg/Products/SmartWatches/gear-vr.jpg"/>
-                        <div class="info">
-                            <h2 class="title">Virtual Reality night</h2>
-                            <p class="desc">Workday hosted an event about VR, interesting talks! not strongly technical</p>
-                        </div>
-                        <div class="social">
-                            <ul>
-                                <li class="meetup" style="width:33%;"><a href="https://www.eventbrite.ie/e/3dcamp-dublin-irish-vr-meetup-tickets-28656050017"><span class="fa fa-globe"></span></a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <time datetime="2016-11-22">
-                            <span class="day">22</span>
-                            <span class="month">Nov</span>
-                            <span class="year">2016</span>
-                            <span class="time">18:00</span>
-                        </time>
-                        <img alt="Dublin Open Source Meetup" src="https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/2/0/b/f/600_456308383.jpeg"/>
-                        <div class="info">
-                            <h2 class="title">Open source meetup</h2>
-                            <p class="desc">Speakers from MariaDB, GitHub and a range of Open Source projects! a great community</p>
-                        </div>
-                        <div class="social">
-                            <ul>
-                                <li class="meetup" style="width:33%;"><a href="https://www.meetup.com/dublin-oss/"><span class="fa fa-meetup"></span></a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    
-                    <li>
-                        <time datetime="2016-11-16">
-                            <span class="day">16</span>
-                            <span class="month">Nov</span>
-                            <span class="year">2016</span>
-                            <span class="time">15:00</span>
-                        </time>
-                        <img alt="OpenetDecoding" src="http://graduate.openet.com/wp-content/uploads/2016/11/012.jpg"/>
-                        <div class="info">
-                            <h2 class="title">Openet Decoding Competition Robocode 2016</h2>
-                            <p class="desc">Finished 5th overall</p>
-                        </div>
-                        <div class="social">
-                            <ul>
-                                <li class="meetup" style="width:33%;"><a href="http://graduate.openet.com/"><span class="fa fa-globe"></span></a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <time datetime="2016-11-05">
-                            <span class="day">5</span>
-                            <span class="month">Nov</span>
-                            <span class="year">2016</span>
-                            <span class="time">All day</span>
-                        </time>
-                        <img alt="PyCon" src="http://python.ie/static/img/pythonie.png"/>
-                        <div class="info">
-                            <h2 class="title">PyCon 2016</h2>
-                            <p class="desc">The PyCon2016, I followed the Data science track, I learned so much from the conference!</p>
-                        </div>
-                        <div class="social">
-                            <ul>
-                                <li class="meetup" style="width:33%;"><a href="http://python.ie/pycon-2016/"><span class="fa fa-globe"></span></a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <time datetime="2016-10-26">
-                            <span class="day">26</span>
-                            <span class="month">Oct</span>
-                            <span class="year">2016</span>
-                            <span class="time">18:30</span>
-                        </time>
-                        <img alt="BlueMix" src="https://www.ibm.com/blogs/bluemix/wp-content/uploads/2016/10/bluemix-logo-2.png"/>
-                        <div class="info">
-                            <h2 class="title">Using AI, IoT and Watson Machine learning</h2>
-                            <p class="desc">One of the winning teams of Galway Watson Hackaton came to talk about their innovation, a cheap hospital bed management</p>
-                        </div>
-                        <div class="social">
-                            <ul>
-                                <li class="meetup" style="width:33%;"><a href="http://www.meetup.com/Dublin-Bluemix-and-Cloud-Meetup/events/234852138/?from=ref"><span class="fa fa-meetup"></span></a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <time datetime="2016-10-13">
-                            <span class="day">13</span>
-                            <span class="month">Oct</span>
-                            <span class="year">2016</span>
-                            <span class="time">16:30</span>
-                        </time>
-                        <img alt="Microsoft coding competition" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F24400090%2F185832375137%2F1%2Foriginal.jpg?w=200&rect=104%2C0%2C1798%2C899&s=f7949a5db7b00cdfb2578ec48487dbc0" />
-                        <div class="info">
-                            <h2 class="title">Microsoft's coding competition</h2>
-                            <p class="desc">Hosted at Trinity college, always great energy at these competitions</p>
-                        </div>
-                        <div class="social">
-                            <ul>
-                                <li class="meetup" style="width:33%;"><a href="https://www.eventbrite.co.uk/e/microsoft-trinity-coding-competition-tickets-27985104200"><span class="fa fa-globe"></span></a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <time datetime="2016-10-12">
-                            <span class="day">12</span>
-                            <span class="month">Oct</span>
-                            <span class="year">2016</span>
-                            <span class="time">18:30</span>
-                        </time>
-                        <img alt="Python" src="http://python.ie/static/img/pythonie.png"/>
-                        <div class="info">
-                            <h2 class="title">Python Ireland Meetup</h2>
-                            <p class="desc">A (big) event about Python</p>
-                        </div>
-                        <div class="social">
-                            <ul>
-                                <li class="meetup" style="width:33%;"><a href="https://www.meetup.com/pythonireland/"><span class="fa fa-meetup"></span></a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <time datetime="2016-10-12">
-                            <span class="day">03</span>
-                            <span class="month">Oct</span>
-                            <span class="year">2016</span>
-                            <span class="time">All day</span>
-                        </time>
-                        <img alt="Microsoft" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F24400090%2F185832375137%2F1%2Foriginal.jpg?w=200&rect=104%2C0%2C1798%2C899&s=f7949a5db7b00cdfb2578ec48487dbc0"/>
-                        <div class="info">
-                            <h2 class="title">Microsoft Ireland Tech Gathering</h2>
-                            <p class="desc">Main theme of the event was Microsoft working towards Open Source, the CEO of Dockers was also there to give a keynote, great to see such a big company going Open Source</p>
-                        </div>
-                        <div class="social">
-                            <ul>
-                                <li class="meetup" style="width:33%;"><a href="http://dublinbic.ie/events/dont-miss-satya-nadella-at-microsoft-ireland-tech-gathering/"><span class="fa fa-meetup"></span></a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <time datetime="2016-10-12">
-                            <span class="day">05</span>
-                            <span class="month">Sep</span>
-                            <span class="year">2016</span>
-                            <span class="time">18:30</span>
-                        </time>
-                        <img alt="C++" src="http://www.technewsable.com/wp-content/uploads/2015/07/c-logo.png"/>
-                        <div class="info">
-                            <h2 class="title">Dublin C/C++ User Group</h2>
-                            <p class="desc">A meetup about C/C++ and functional programming in C with boost, great and very technical talks! Also some fun coding stories about headbreaking bugs</p>
-                        </div>
-                        <div class="social">
-                            <ul>
-                                <li class="meetup" style="width:33%;"><a href="https://www.meetup.com/cppdug/"><span class="fa fa-meetup"></span></a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <time datetime="2016-08-25">
-                            <span class="day">25</span>
-                            <span class="month">Aug</span>
-                            <span class="year">2016</span>
-                            <span class="time">19:00</span>
-                        </time>
-                        <img alt="R" src="https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/c/8/d/4/global_295731412.jpeg"/>
-                        <div class="info">
-                            <h2 class="title">Data Science / R Meetup</h2>
-                            <p class="desc">Short talks about Data Science and R hosted at Zalando, sparked my interest in Data Science</p>
-                        </div>
-                        <div class="social">
-                            <ul>
-                                <li class="meetup" style="width:33%;"><a href="http://www.meetup.com/DublinR/events/232229300/?isFromReg=true"><span class="fa fa-meetup"></span></a></li>
-                            </ul>
-                        </div>
-                    </li>
 
-                </ul>
-        </div>
-
-
+    <!-- Events -->
+    <div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]" ng-controller="eventsCtrl">
+        <ul class="event-list">
+            <li ng-repeat="event in events">
+                <time>
+                  <span class="day">{{event.day}}</span>
+                  <span class="month">{{event.month}}</span>
+                  <span class="year">{{event.year}}</span>
+                  <span class="time">{{event.time}}</span>
+                </time>
+                <img alt="{{event.img.alt}}" src="{{event.img.src}}" />
+                <div class="info">
+                    <h2 class="title">{{event.title}}</h2>
+                    <p class="desc">{{event.desc}}</p>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li class="meetup" style="width:33%;"><a href="{{event.link.href}}"><span class="fa fa-{{event.link.type}}"></span></a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </div>
-    <div class="site-wrapper" id="four">
-    </div>
-        <div id="modal" class="modal mymodals">
-            <div class="modal-header"><h1>Skills</h1></div>
-            <div class="modal-content">
-            <br/>
-            Python
-            <br/>
-              <div class="progress">
+  </div>
 
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;">
-                  <span class="sr-only">Used in industry</span>
-                  Used in industry
-                </div>
-              </div>
-              <br/>
-              Django
-              <br/>
-              <div class="progress">
+  <!-- Modals -->
+  <!-- Skills -->
+  <div id="modal" class="modal mymodals">
+      <div class="modal-header"><h1>Skills</h1></div>
+      <div class="modal-content" ng-controller="skillsCtrl">
+        <div ng-repeat="skill in skills">
+          <br/>
+          {{skill.name}}
+          <br/>
+          <div class="progress">
 
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100" style="width: 96%;">
-                  <span class="sr-only">Used in industry</span>
-                  Used in industry
-                </div>
-              </div>
-            <br/>
-            Scala
-            <br/>
-              <div class="progress">
-
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
-                  <span class="sr-only">Used in industry</span>
-                  Used in industry
-                </div>
-              </div>
-            <br/>
-            PlayFramework
-            <br/>
-              <div class="progress">
-
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width: 93%;">
-                  <span class="sr-only">Used in industry</span>
-                  Used in industry
-                </div>
-              </div>
-            <br/>
-            C++
-            <br/>
-              <div class="progress">
-
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                  <span class="sr-only">Good knowledge</span>
-                  Good knowledge
-                </div>
-              </div>
-            <br/>
-            C#
-            <br/>
-              <div class="progress">
-
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%;">
-                  <span class="sr-only">Good knowledge</span>
-                  Good knowledge
-                </div>
-              </div>
-              <br/>
-              AngularJS
-              <br/>
-              <div class="progress">
-
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%;">
-                  <span class="sr-only">Used in projects</span>
-                  Used in projects
-                </div>
-              </div>
-              <br/>
-              Computer Science
-              <br/>
-              <div class="progress">
-
-                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;">
-                  <span class="sr-only">Hons Degree and industry experience</span>
-                  Hons Degree and industry experience
-                </div>
-              </div>
-              <br/>
-              Data Science
-              <br/>
-              <div class="progress">
-
-                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                  <span class="sr-only">Notions and interest</span>
-                  Notions and interest
-                </div>
-              </div>
-              <br/>
-              Machine Learning
-              <br/>
-              <div class="progress">
-
-                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
-                  <span class="sr-only">Beginner</span>
-                  Beginner
-                </div>
-              </div>
-              <br/>
-              Image Processing
-              <br/>
-              <div class="progress">
-
-                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
-                  <span class="sr-only">Beginner</span>
-                  Beginner
-                </div>
-              </div>
-            <div class="modal-footer" style="text-align: center;">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <div class="progress-bar progress-bar-{{skill.progress.type}}" role="progressbar" aria-valuenow="{{skill.progress.width}}" aria-valuemin="0" aria-valuemax="100" style="width: {{skill.progress.width}}%;">
+              <span class="sr-only">{{skill.progress.desc}}</span>
+              {{skill.progress.desc}}
             </div>
-            <!--<div class="modal-content"><img src="./images/wordcloud.svg" style='stroke-width: 0px; background-color: black;'></img></div>-->
+          </div>       
         </div>
       </div>
-            <div id="myModal" class="modal mymodals">
-                  <div class="modal-content">
-                    <h3 id="myModalLabel">Contact me :)</h3>
-                    <form id='formContact' class="form-horizontal col-sm-12">
-                      <div class="form-group"><label>Name</label><input required class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
-                      <div class="form-group"><label>Message</label><textarea required class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
-                      <div class="form-group"><label>E-Mail</label><input required class="form-control email" placeholder="email@you.com (so I can answer you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
-                      <button id="contactButton" type="submit" class="btn btn-info">Send</button> 
-                      <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                    </form>
-                  </div>
-            </div>
+      <div class="modal-footer" style="text-align: center;">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div id="myModal" class="modal mymodals">
+        <div class="modal-content">
+          <h3 id="myModalLabel">Contact me :)</h3>
+          <form id='formContact' class="form-horizontal col-sm-12">
+            <div class="form-group"><label>Name</label><input required class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
+            <div class="form-group"><label>Message</label><textarea required class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
+            <div class="form-group"><label>E-Mail</label><input required class="form-control email" placeholder="email@you.com (so I can answer you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
+            <button id="contactButton" type="submit" class="btn btn-info">Send</button> 
+            <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Cancel</button>
+          </form>
+        </div>
+  </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -588,11 +311,13 @@
     <!-- MOBILE -->
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="./dist/js/bootstrap.min.js"></script>
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="./assets/jquery-ui/jquery-ui.min.js"></script>
-    <script src="./navigation.js"></script>
-    <script src="./enhance_style.js"></script>
-    <script src="./jquery.countdown.min.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/enhance_style.js"></script>
+
   </body>
 </html>

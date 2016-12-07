@@ -1,0 +1,90 @@
+[
+	{
+		"name": "Python",
+		"progress": {
+			"width": "98",
+			"desc": "Used in industry",
+			"type": "info"
+		}	
+	},
+	{
+		"name": "Django",
+		"progress": {
+			"width": "96",
+			"desc": "Used in industry",
+			"type": "info"
+		}	
+	},
+	{
+		"name": "Scala",
+		"progress": {
+			"width": "95",
+			"desc": "Used in industry",
+			"type": "info"
+		}	
+	},
+	{
+		"name": "PlayFramework",
+		"progress": {
+			"width": "93",
+			"desc": "Used in industry",
+			"type": "info"
+		}	
+	},
+	{
+		"name": "C++",
+		"progress": {
+			"width": "90",
+			"desc": "Good knowledge",
+			"type": "info"
+		}	
+	},
+	{
+		"name": "C#",
+		"progress": {
+			"width": "88",
+			"desc": "Good knowledge",
+			"type": "info"
+		}	
+	},
+	{
+		"name": "AngularJS",
+		"progress": {
+			"width": "87",
+			"desc": "Used in projects",
+			"type": "info"
+		}	
+	},
+	{
+		"name": "Computer Science",
+		"progress": {
+			"width": "98",
+			"desc": "Hons Degree and industry experience",
+			"type": "success"
+		}	
+	},
+	{
+		"name": "Data Science",
+		"progress": {
+			"width": "60",
+			"desc": "Notions and interest",
+			"type": "success"
+		}	
+	},
+	{
+		"name": "Machine Learning",
+		"progress": {
+			"width": "30",
+			"desc": "Beginner",
+			"type": "success"
+		}	
+	},
+	{
+		"name": "Image Processing",
+		"progress": {
+			"width": "30",
+			"desc": "Beginner",
+			"type": "success"
+		}	
+	}
+]

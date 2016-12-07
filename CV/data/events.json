@@ -1,0 +1,178 @@
+[
+   {
+      "title":"Natural language processing Meetup",
+      "desc":"Workday hosts an event about Natural language processing",
+      "day":"13",
+      "month":"Dec",
+      "year":"2016",
+      "time":"18:00",
+      "img":{
+         "alt":"NLP Meetup",
+         "src":"https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/d/d/b/0/global_452336752.jpeg"
+      },
+      "link":{
+         "type":"meetup",
+         "href":"https://www.meetup.com/NLP-Dublin/events/235149644/"
+      }
+   },
+   {
+      "title":"Virtual reality night",
+      "desc":"Workday hosted an event about VR, interesting talks! not strongly technical",
+      "day":"24",
+      "month":"Nov",
+      "year":"2016",
+      "time":"18:30",
+      "img":{
+         "alt":"VR night",
+         "src":"http://bdshop-o2zecwh.netdna-ssl.com/media/wysiwyg/Products/SmartWatches/gear-vr.jpg"
+      },
+      "link":{
+         "type":"globe",
+         "href":"https://www.eventbrite.ie/e/3dcamp-dublin-irish-vr-meetup-tickets-28656050017"
+      }
+   },
+   {
+      "title":"Dublin Open Source Meetup",
+      "desc":"Speakers from MariaDB, GitHub and a range of Open Source projects! a great community",
+      "day":"22",
+      "month":"Nov",
+      "year":"2016",
+      "time":"18:00",
+      "img":{
+         "alt":"Dublin Open Source Meetup",
+         "src":"https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/2/0/b/f/600_456308383.jpeg"
+      },
+      "link":{
+         "type":"meetup",
+         "href":"https://www.meetup.com/dublin-oss/"
+      }
+   },
+   {
+      "title":"Openet Decoding Competition Robocode 2016",
+      "desc":"Finished 5th overall",
+      "day":"16",
+      "month":"Nov",
+      "year":"2016",
+      "time":"15:00",
+      "img":{
+         "alt":"Openet Decoding",
+         "src":"http://graduate.openet.com/wp-content/uploads/2016/11/012.jpg"
+      },
+      "link":{
+         "type":"globe",
+         "href":"http://graduate.openet.com/"
+      }
+   },
+   {
+      "title":"PyCon 2016",
+      "desc":"The PyCon2016, I followed the Data science track, I learned so much from the conference!",
+      "day":"5",
+      "month":"Nov",
+      "year":"2016",
+      "time":"All day",
+      "img":{
+         "alt":"PyCon",
+         "src":"http://python.ie/static/img/pythonie.png"
+      },
+      "link":{
+         "type":"globe",
+         "href":"http://python.ie/pycon-2016/"
+      }
+   },
+   {
+      "title":"Using AI, IoT and Watson Machine learning",
+      "desc":"One of the winning teams of Galway Watson Hackaton came to talk about their innovation, a cheap hospital bed management",
+      "day":"26",
+      "month":"Oct",
+      "year":"2016",
+      "time":"18:30",
+      "img":{
+         "alt":"BlueMix",
+         "src":"https://www.ibm.com/blogs/bluemix/wp-content/uploads/2016/10/bluemix-logo-2.png"
+      },
+      "link":{
+         "type":"meetup",
+         "href":"http://www.meetup.com/Dublin-Bluemix-and-Cloud-Meetup/events/234852138/?from=ref"
+      }
+   },
+   {
+      "title":"Microsoft's coding competition",
+      "desc":"Hosted at Trinity college, always great energy at these competitions",
+      "day":"13",
+      "month":"Oct",
+      "year":"2016",
+      "time":"16:30",
+      "img":{
+         "alt":"Microsoft coding competition",
+         "src":"https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F24400090%2F185832375137%2F1%2Foriginal.jpg?w=200&rect=104%2C0%2C1798%2C899&s=f7949a5db7b00cdfb2578ec48487dbc0"
+      },
+      "link":{
+         "type":"globe",
+         "href":"https://www.eventbrite.co.uk/e/microsoft-trinity-coding-competition-tickets-27985104200"
+      }
+   },
+   {
+      "title":"Python Ireland Meetup",
+      "desc":"A (big) event about Python",
+      "day":"12",
+      "month":"Oct",
+      "year":"2016",
+      "time":"18:30",
+      "img":{
+         "alt":"Python",
+         "src":"http://python.ie/static/img/pythonie.png"
+      },
+      "link":{
+         "type":"meetup",
+         "href":"https://www.meetup.com/pythonireland/"
+      }
+   },
+   {
+      "title":"Microsoft Ireland Tech Gathering",
+      "desc":"Main theme of the event was Microsoft working towards Open Source, the CEO of Dockers was also there to give a keynote, great to see such Microsoft going Open Source",
+      "day":"03",
+      "month":"Oct",
+      "year":"2016",
+      "time":"All day",
+      "img":{
+         "alt":"Microsoft",
+         "src":"https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F24400090%2F185832375137%2F1%2Foriginal.jpg?w=200&rect=104%2C0%2C1798%2C899&s=f7949a5db7b00cdfb2578ec48487dbc0"
+      },
+      "link":{
+         "type":"meetup",
+         "href":"http://dublinbic.ie/events/dont-miss-satya-nadella-at-microsoft-ireland-tech-gathering/"
+      }
+   },
+   {
+      "title":"Dublin C/C++ User Group",
+      "desc":"A meetup about C/C++ and functional programming in C with boost, great and very technical talks! Also some fun coding stories about headbreaking bugs",
+      "day":"05",
+      "month":"Sep",
+      "year":"2016",
+      "time":"18:30",
+      "img":{
+         "alt":"C/C++",
+         "src":"http://www.technewsable.com/wp-content/uploads/2015/07/c-logo.png"
+      },
+      "link":{
+         "type":"meetup",
+         "href":"https://www.meetup.com/cppdug/"
+      }
+   },
+   {
+      "title":"Data Science / R Meetup",
+      "desc":"Short talks about Data Science and R hosted at Zalando, sparked my interest in Data Science",
+      "day":"25",
+      "month":"Aug",
+      "year":"2016",
+      "time":"19:00",
+      "img":{
+         "alt":"R",
+         "src":"https://a248.e.akamai.net/secure.meetupstatic.com/photos/event/c/8/d/4/global_295731412.jpeg"
+      },
+      "link":{
+         "type":"meetup",
+         "href":"http://www.meetup.com/DublinR/events/232229300/?isFromReg=true"
+      }
+   }
+]
