@@ -20,7 +20,7 @@ html,body{
   background-color: black;
 }
 #mail{
-  font-size: 85px;
+  font-size: 65px;
 }
 #formSuccess {
   position: absolute;
@@ -405,19 +405,19 @@ body {
   margin-top: 10px;
 }
 #magic:hover{
-  font-size: 95px;
-  transition: font-size 0.5s ease;
-}
-#magic{
-  font-size: 85px;
-  transition: font-size 0.5s ease;
-}
-#credits:hover{
   font-size: 80px;
   transition: font-size 0.5s ease;
 }
-#credits{
+#magic{
   font-size: 65px;
+  transition: font-size 0.5s ease;
+}
+#credits:hover{
+  font-size: 60px;
+  transition: font-size 0.5s ease;
+}
+#credits{
+  font-size: 50px;
   transition: font-size 0.5s ease;
 }
 .mymodals{
