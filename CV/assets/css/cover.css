@@ -410,6 +410,7 @@ body {
 }
 #magic{
   font-size: 65px;
+  padding-left: 35px;
   transition: font-size 0.5s ease;
 }
 #credits:hover{
@@ -418,6 +419,7 @@ body {
 }
 #credits{
   font-size: 50px;
+  padding-left: 35px;
   transition: font-size 0.5s ease;
 }
 .mymodals{
@@ -890,6 +892,28 @@ body {
     height: auto !important;
     margin-bottom:0px !important;
   }
+
+#magic:hover{
+  font-size: 65px;
+  transition: font-size 0.5s ease;
+}
+#magic{
+  padding-left: 10px;
+  font-size: 45px;
+  transition: font-size 0.5s ease;
+}
+#credits:hover{
+  font-size: 40px;
+  transition: font-size 0.5s ease;
+}
+#credits{
+  padding-left: 5px;
+  font-size: 30px;
+  transition: font-size 0.5s ease;
+}
+#mail {
+  font-size: 45px;
+}
 
 .mymodals{
   padding-top: 15px;
