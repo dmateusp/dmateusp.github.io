@@ -408,9 +408,11 @@ body {
   font-size: 80px;
   transition: font-size 0.5s ease;
 }
+.mainButtons{
+  padding-left: 35px;
+}
 #magic{
   font-size: 65px;
-  padding-left: 35px;
   transition: font-size 0.5s ease;
 }
 #credits:hover{
@@ -419,7 +421,6 @@ body {
 }
 #credits{
   font-size: 50px;
-  padding-left: 35px;
   transition: font-size 0.5s ease;
 }
 .mymodals{
@@ -897,7 +898,6 @@ body {
   transition: font-size 0.5s ease;
 }
 #magic{
-  padding-left: 10px;
   font-size: 45px;
   transition: font-size 0.5s ease;
 }
@@ -905,8 +905,10 @@ body {
   font-size: 40px;
   transition: font-size 0.5s ease;
 }
+.mainButtons {
+  padding-left: 10px;
+}
 #credits{
-  padding-left: 5px;
   font-size: 30px;
   transition: font-size 0.5s ease;
 }
