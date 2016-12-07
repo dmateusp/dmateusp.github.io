@@ -394,12 +394,30 @@ body {
   background-color: #fff;
   border: 1px solid #fff;
 }
+.credits a{
+  color: cyan;
+}
+.credits li {
+  list-style-type: circle;
+  margin-top: 10px;
+}
+.credits ul {
+  margin-top: 10px;
+}
 #magic:hover{
   font-size: 95px;
   transition: font-size 0.5s ease;
 }
 #magic{
   font-size: 85px;
+  transition: font-size 0.5s ease;
+}
+#credits:hover{
+  font-size: 80px;
+  transition: font-size 0.5s ease;
+}
+#credits{
+  font-size: 65px;
   transition: font-size 0.5s ease;
 }
 .mymodals{
