@@ -1,5 +1,6 @@
 import ECOption from "./echarts";
 import * as echarts from "echarts";
+import './style.css';
 
 const data = [
   { value: 800, name: "A" },
