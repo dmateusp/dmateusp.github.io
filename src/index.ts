@@ -1,6 +1,6 @@
 import ECOption from "./echarts";
 import * as echarts from "echarts";
-import './style.css';
+import "./style.css";
 
 const data = [
   { value: 800, name: "A" },
@@ -119,11 +119,15 @@ const parliamentOption = (function () {
   } as ECOption;
 })();
 
-const parliamentChart = echarts.init(
-  document.getElementById("parliament-general-results")
+const parliamentGeneralResultsDom = document.getElementById(
+  "parliament-general-results"
 );
-parliamentChart.setOption(parliamentOption);
-window.addEventListener("resize", function () {
-  parliamentChart.resize();
-});
+if (parliamentGeneralResultsDom != null) {
+  const parliamentChart = echarts.init(parliamentGeneralResultsDom);
+  parliamentChart.setOption(parliamentOption);
+  window.addEventListener("resize", function () {
+    parliamentChart.resize();
+  });
+}
+
 console.log("hello world");
