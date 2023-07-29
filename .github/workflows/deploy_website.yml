@@ -32,6 +32,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20
+      - name: Install deps
+        run: npm ci
       - name: Build artifacts
         run: npm run build
       - name: Setup Pages
