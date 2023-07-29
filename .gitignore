@@ -35,6 +35,8 @@ bower_components
 Thumbs.db
 
 !dist/
+dist/**/*.js
+dist/**/*.js.LICENSE.txt
 
 # ignore yarn.lock
 yarn.lock
