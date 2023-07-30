@@ -1,0 +1,72 @@
+{
+  "ps": {
+    "height": 30,
+    "align": "left",
+    "backgroundColor": {
+      "image": "https://www.eleicoes.mai.gov.pt/legislativas2022/assets/static/files/ps-logo.gif"
+    }
+  },
+  "be": {
+    "height": 30,
+    "align": "left",
+    "backgroundColor": {
+      "image": "https://www.eleicoes.mai.gov.pt/legislativas2022/assets/static/files/be-logo.gif"
+    }
+  },
+  "pcppev": {
+    "height": 30,
+    "align": "left",
+    "backgroundColor": {
+      "image": "https://www.eleicoes.mai.gov.pt/legislativas2022/assets/static/files/pcppev-logo.png"
+    }
+  },
+  "l": {
+    "height": 30,
+    "align": "left",
+    "backgroundColor": {
+      "image": "https://www.eleicoes.mai.gov.pt/legislativas2022/assets/static/files/l-logo.jpg"
+    }
+  },
+  "pan": {
+    "height": 30,
+    "align": "left",
+    "backgroundColor": {
+      "image": "https://www.eleicoes.mai.gov.pt/legislativas2022/assets/static/files/pan-logo.gif"
+    }
+  },
+  "ppdpsd": {
+    "height": 30,
+    "align": "left",
+    "backgroundColor": {
+      "image": "https://www.eleicoes.mai.gov.pt/legislativas2022/assets/static/files/ppdpsd-logo.gif"
+    }
+  },
+  "ppdpsdcdspp": {
+    "height": 30,
+    "align": "left",
+    "backgroundColor": {
+      "image": "https://www.eleicoes.mai.gov.pt/legislativas2022/assets/static/files/ppdpsdcdspp-logo.png"
+    }
+  },
+  "ppdpsdcdsppppm": {
+    "height": 30,
+    "align": "left",
+    "backgroundColor": {
+      "image": "https://www.eleicoes.mai.gov.pt/legislativas2022/assets/static/files/ppdpsdcdsppppm-logo.png"
+    }
+  },
+  "il": {
+    "height": 30,
+    "align": "left",
+    "backgroundColor": {
+      "image": "https://www.eleicoes.mai.gov.pt/legislativas2022/assets/static/files/il-logo.png"
+    }
+  },
+  "ch": {
+    "height": 30,
+    "align": "left",
+    "backgroundColor": {
+      "image": "https://www.eleicoes.mai.gov.pt/legislativas2022/assets/static/files/ch-logo.png"
+    }
+  }
+}

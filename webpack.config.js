@@ -35,5 +35,8 @@ module.exports = {
     hot: true,
     compress: true,
     historyApiFallback: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    }
   },
 };

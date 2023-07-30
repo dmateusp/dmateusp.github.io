@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/echarts': ^4.9.18
   '@types/node': ^20.4.2
   css-loader: ^6.8.1
   echarts: ^5.4.3
@@ -16,6 +17,7 @@ specifiers:
   webpack-dev-server: ^4.15.1
 
 devDependencies:
+  '@types/echarts': 4.9.18
   '@types/node': 20.4.2
   css-loader: 6.8.1_webpack@5.88.2
   echarts: 5.4.3
@@ -497,6 +499,12 @@ packages:
       '@types/node': 20.4.2
     dev: true
 
+  /@types/echarts/4.9.18:
+    resolution: {integrity: sha512-Qav4M1i1qmPemMywMnDGIbvIBB/9pdrDKLI1dyMho4Yz/ldCB3ry2zGeH0UhAhgmaoPgwYrCDo8xd1UeByz+rw==}
+    dependencies:
+      '@types/zrender': 4.0.3
+    dev: true
+
   /@types/eslint-scope/3.7.4:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
@@ -602,6 +610,10 @@ packages:
     resolution: {integrity: sha512-lwhs8hktwxSjf9UaZ9tG5M03PGogvFaH8gUgLNbN9HKIg0dvv6q+gkSuJ8HN4/VbyxkuLzCjlN7GquQ0gUJfIg==}
     dependencies:
       '@types/node': 20.4.2
+    dev: true
+
+  /@types/zrender/4.0.3:
+    resolution: {integrity: sha512-EPI269lkHNsObwILJ1k1z7znLjKyePuWRy/XKK0shSGpBb9cIX307arcwJV4+2NeZj5wEjN06r4D8yFv7sI06g==}
     dev: true
 
   /@webassemblyjs/ast/1.11.6:

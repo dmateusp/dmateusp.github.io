@@ -11,7 +11,9 @@ import {
   // Dataset
   DatasetComponent,
   // Built-in transform (filter, sort)
-  TransformComponent
+  TransformComponent,
+  LegendComponent,
+  ToolboxComponent,
 } from 'echarts/components';
 import { LabelLayout, UniversalTransition } from 'echarts/features';
 import { CanvasRenderer } from 'echarts/renderers';
@@ -19,21 +21,23 @@ import type {
   // The series option types are defined with the SeriesOption suffix
   BarSeriesOption, 
   LineSeriesOption,
+  PieSeriesOption,
+  CustomSeriesOption,
 } from 'echarts/charts';
 import type {
   // The component option types are defined with the ComponentOption suffix
   TitleComponentOption, 
   TooltipComponentOption,
   GridComponentOption,
-  DatasetComponentOption
+  DatasetComponentOption,
+  ToolboxComponentOption,
 } from 'echarts/components';
 import type { 
-  ComposeOption, 
+  ComposeOption,
 } from 'echarts/core';
-import { CustomSeriesOption, PieSeriesOption } from 'echarts';
 
 // Create an Option type with only the required components and charts via ComposeOption
-type ECOption = ComposeOption<
+export type ECOption = ComposeOption<
   | BarSeriesOption
   | LineSeriesOption
   | TitleComponentOption
@@ -42,6 +46,7 @@ type ECOption = ComposeOption<
   | DatasetComponentOption
   | PieSeriesOption
   | CustomSeriesOption
+  | ToolboxComponentOption
 >;
 
 // Register the required components
@@ -51,6 +56,8 @@ echarts.use([
   GridComponent,
   DatasetComponent,
   TransformComponent,
+  LegendComponent,
+  ToolboxComponent,
   BarChart,
   LineChart,
   LabelLayout,
@@ -59,4 +66,4 @@ echarts.use([
   PieChart,
 ]);
 
-export default ECOption;
+export default echarts;
