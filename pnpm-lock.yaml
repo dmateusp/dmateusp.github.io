@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@types/echarts': ^4.9.18
   '@types/node': ^20.4.2
+  autoprefixer: ^10.4.14
   css-loader: ^6.8.1
   echarts: ^5.4.3
   postcss: ^8.4.27
@@ -19,6 +20,7 @@ specifiers:
 devDependencies:
   '@types/echarts': 4.9.18
   '@types/node': 20.4.2
+  autoprefixer: 10.4.14_postcss@8.4.27
   css-loader: 6.8.1_webpack@5.88.2
   echarts: 5.4.3
   postcss: 8.4.27

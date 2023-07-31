@@ -4,18 +4,54 @@
   <title>@dmateusp</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="" />
-  <style>
-    html,
-    body {
-      width: 100%;
-    }
-    .chart-container {
-      min-height: 500px;
-      min-width: 900px;
-    }
-  </style>
-  <body>
-    <div class="chart-container" id="parliament-general-results"></div>
+  <body class="w-full m-6">
+    <div class="w-full grid grid-rows-2 justify-items-center">
+      <h1 class="text-2xl">Portuguese 2022 elections</h1>
+      <h2 class="test-lg">Comparison of voting mechanisms</h2>
+      <div
+        class="inline-flex rounded-md shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-slate-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-slate-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-slate-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+        role="group"
+      >
+        <button
+          type="button"
+          class="inline-block rounded-l bg-slate-400 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-slate-600 focus:bg-slate-600 focus:outline-none focus:ring-0 active:bg-slate-700"
+        >
+          2022 D'Hondt
+        </button>
+        <button
+          type="button"
+          class="inline-block bg-slate-400 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-slate-600 focus:bg-slate-600 focus:outline-none focus:ring-0 active:bg-slate-700"
+        >
+          1 Constituency
+        </button>
+        <button
+          type="button"
+          class="inline-block rounded-r bg-slate-400 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-slate-600 focus:bg-slate-600 focus:outline-none focus:ring-0 active:bg-slate-700"
+        >
+          Unused votes recycled
+        </button>
+      </div>
+    </div>
+    <div class="mt-4 grid grid-rows-4">
+      <div>
+        <hr
+          class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"
+        />
+        <div class="w-full min-h-[400px]" id="parliament-general-results"></div>
+        <hr
+          class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"
+        />
+      </div>
+      <div>
+        <div
+          class="w-full min-h-[400px]"
+          id="treemap-mandates-per-district"
+        ></div>
+        <hr
+          class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"
+        />
+      </div>
+    </div>
     <script src="/portuguese_2022_elections.bundle.js"></script>
   </body>
 </html>

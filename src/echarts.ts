@@ -3,6 +3,7 @@ import {
   BarChart,
   LineChart,
   PieChart,
+  TreemapChart,
 } from 'echarts/charts';
 import {
   TitleComponent,
@@ -23,6 +24,7 @@ import type {
   LineSeriesOption,
   PieSeriesOption,
   CustomSeriesOption,
+  TreemapSeriesOption,
 } from 'echarts/charts';
 import type {
   // The component option types are defined with the ComponentOption suffix
@@ -46,6 +48,7 @@ export type ECOption = ComposeOption<
   | DatasetComponentOption
   | PieSeriesOption
   | CustomSeriesOption
+  | TreemapSeriesOption
   | ToolboxComponentOption
 >;
 
@@ -60,6 +63,7 @@ echarts.use([
   ToolboxComponent,
   BarChart,
   LineChart,
+  TreemapChart,
   LabelLayout,
   UniversalTransition,
   CanvasRenderer,

@@ -13,6 +13,7 @@
   "devDependencies": {
     "@types/echarts": "^4.9.18",
     "@types/node": "^20.4.2",
+    "autoprefixer": "^10.4.14",
     "css-loader": "^6.8.1",
     "echarts": "^5.4.3",
     "postcss": "^8.4.27",
