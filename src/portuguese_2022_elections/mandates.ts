@@ -37,6 +37,9 @@ export const mandatesPerConstituencyOption: ECOption = {
       boundaryGap: [0, 1],
       position: "right",
       max: totalMandatesPerConstituency.reduce((m1, m2) => (m1 > m2 ? m1 : m2)),
+      axisLabel: {
+        fontSize: 15,
+      },
     },
     {
       type: "value",
@@ -46,11 +49,17 @@ export const mandatesPerConstituencyOption: ECOption = {
       max: registeredVotersPerConstituency.reduce((r1, r2) =>
         r1 > r2 ? r1 : r2
       ),
+      axisLabel: {
+        fontSize: 15,
+      },
     },
   ],
   yAxis: {
     type: "category",
     data: constituencies,
+    axisLabel: {
+        fontSize: 18,
+    },
   },
 
   series: [
