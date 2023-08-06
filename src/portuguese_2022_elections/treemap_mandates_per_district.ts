@@ -51,9 +51,7 @@ function getLevelOption() {
       label: {
         show: true,
         formatter: function (info: any) {
-          return (
-            info.name + ": " + info.value
-          );
+          return info.name + ": " + info.value;
         },
       },
     },
@@ -112,7 +110,7 @@ const data = [
   processData("Viseu", viseuElectionResults.currentResults),
 ];
 
-const treeMapMandatesPerDistrictOption: ECOption = {
+const treeMapMandatesPerConstituencyOption: ECOption = {
   title: {
     text: "Mandates per constituency",
     left: "center",
@@ -165,4 +163,4 @@ const treeMapMandatesPerDistrictOption: ECOption = {
   ],
 };
 
-export default treeMapMandatesPerDistrictOption;
+export default treeMapMandatesPerConstituencyOption;
