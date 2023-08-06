@@ -7,6 +7,7 @@ import globalResultsOption from "./portuguese_2022_elections/global_results";
 import treeMapMandatesPerConstituencyOption from "./portuguese_2022_elections/treemap_mandates_per_district";
 import "./style.css";
 import { mandatesPerConstituencyOption } from "./portuguese_2022_elections/mandates";
+import { hondtRaceBarOption } from "./portuguese_2022_elections/hondt_race_bar";
 
 // State
 enum ElectionMethod {
@@ -82,6 +83,23 @@ if (mandatesPerConstituencyDom != null) {
   mandatesPerConstituencyChart.setOption(mandatesPerConstituencyOption);
   window.addEventListener("resize", function () {
     mandatesPerConstituencyChart.resize();
+  });
+}
+
+const hondtRaceBarDom = document.getElementById("hondt-race-bar");
+if (hondtRaceBarDom != null) {
+  const hondtRaceBarChart = echarts.init(hondtRaceBarDom);
+  let mandatesAssigned = 0;
+  hondtRaceBarChart.setOption(hondtRaceBarOption(mandatesAssigned));
+  const nextMandateInterval = setInterval(function () {
+    mandatesAssigned += 1;
+    if (mandatesAssigned > 39) {
+      clearInterval(nextMandateInterval);
+    }
+    hondtRaceBarChart.setOption(hondtRaceBarOption(mandatesAssigned));
+  }, 3000);
+  window.addEventListener("resize", function () {
+    hondtRaceBarChart.resize();
   });
 }
 
