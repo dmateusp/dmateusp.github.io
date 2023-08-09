@@ -16,6 +16,7 @@ import {
   LegendComponent,
   ToolboxComponent,
   GraphicComponent,
+  DataZoomComponent,
 } from 'echarts/components';
 import { LabelLayout, UniversalTransition } from 'echarts/features';
 import { CanvasRenderer } from 'echarts/renderers';
@@ -34,6 +35,7 @@ import type {
   GridComponentOption,
   DatasetComponentOption,
   ToolboxComponentOption,
+  DataZoomComponentOption,
 } from 'echarts/components';
 import type { 
   ComposeOption,

@@ -17,9 +17,7 @@ enum ElectionMethod {
 }
 let selectedElectionMethod = {
   internal: ElectionMethod.HONDT_2022,
-  listener: function (val: ElectionMethod) {
-    console.log("hey: ", val);
-  },
+  listener: function (val: ElectionMethod) {},
   set electionMethod(val) {
     this.internal = val;
     this.listener(val);
@@ -36,7 +34,6 @@ let selectedElectionMethod = {
   },
 };
 
-// ECharts init
 const parliamentGeneralResultsDom = document.getElementById(
   "parliament-general-results"
 );
@@ -86,22 +83,32 @@ if (mandatesPerConstituencyDom != null) {
   });
 }
 
+let mandatesAssigned = 0;
+
 const hondtRaceBarDom = document.getElementById("hondt-race-bar");
-if (hondtRaceBarDom != null) {
-  const hondtRaceBarChart = echarts.init(hondtRaceBarDom);
-  let mandatesAssigned = 0;
-  hondtRaceBarChart.setOption(hondtRaceBarOption(mandatesAssigned));
-  const nextMandateInterval = setInterval(function () {
-    mandatesAssigned += 1;
-    if (mandatesAssigned > 39) {
-      clearInterval(nextMandateInterval);
-    }
+const hondtRaceBarChart = echarts.init(hondtRaceBarDom);
+
+hondtRaceBarChart.setOption(hondtRaceBarOption(mandatesAssigned));
+window.addEventListener("resize", function () {
+  hondtRaceBarChart.resize();
+});
+
+const prevMandateHondtButton = document.getElementById("button-hondt-prev")!;
+const nextMandateHondtButton = document.getElementById("button-hondt-next")!;
+const prevNextMandateHondt = (e: MouseEvent) => {
+  let elem = e.target as HTMLButtonElement;
+  if (elem.id == prevMandateHondtButton?.id && mandatesAssigned > 0) {
+    mandatesAssigned -= 1;
     hondtRaceBarChart.setOption(hondtRaceBarOption(mandatesAssigned));
-  }, 3000);
-  window.addEventListener("resize", function () {
-    hondtRaceBarChart.resize();
-  });
-}
+  }
+
+  if (elem.id == nextMandateHondtButton?.id && mandatesAssigned < 40) {
+    mandatesAssigned += 1;
+    hondtRaceBarChart.setOption(hondtRaceBarOption(mandatesAssigned));
+  }
+};
+prevMandateHondtButton.onclick = prevNextMandateHondt;
+nextMandateHondtButton.onclick = prevNextMandateHondt;
 
 // Election method selection
 const electionMethodSelect = (e: MouseEvent) => {

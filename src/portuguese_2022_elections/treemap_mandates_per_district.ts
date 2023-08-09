@@ -114,7 +114,12 @@ const treeMapMandatesPerConstituencyOption: ECOption = {
   title: {
     text: "Mandates per constituency",
     left: "center",
+    link: "#treemap-mandates-per-district",
+    target: "self",
   },
+
+  left: "0%",
+  right: "0%",
 
   toolbox: {
     show: true,

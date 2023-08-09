@@ -8,6 +8,8 @@ import {
 export const mandatesPerConstituencyOption: ECOption = {
   title: {
     text: "Mandates compared to subscribed voters per constituency",
+    link: "#mandates-per-district",
+    target: "self",
   },
   toolbox: {
     show: true,

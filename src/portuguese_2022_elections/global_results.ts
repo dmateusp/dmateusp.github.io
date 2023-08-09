@@ -36,6 +36,8 @@ const globalResultsOption = function (
     title: {
       text: "Global results",
       left: "center",
+      link: "#parliament-general-results",
+      target: "self",
     },
     tooltip: {
       trigger: "item",

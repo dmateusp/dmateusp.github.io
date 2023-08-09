@@ -10,11 +10,13 @@ export function hondtRaceBarOption(mandatesAssigned: number): ECOption {
 
   return {
     title: {
-      text: "Method D'Hondt",
+      text: "How the D'Hondt method works: example of Porto",
+      link: "#hondt-race-bar",
+      target: "self",
     },
     grid: {
-      top: 30,
-      bottom: 30,
+      top: 50,
+      bottom: 60,
       left: 150,
       right: 80,
     },
@@ -23,6 +25,17 @@ export function hondtRaceBarOption(mandatesAssigned: number): ECOption {
       axisPointer: {
         type: "shadow",
       },
+    },
+    toolbox: {
+      show: true,
+      feature: {
+        saveAsImage: {
+          show: true,
+          pixelRatio: 10,
+        },
+      },
+      bottom: "0%",
+      left: "50%",
     },
     xAxis: [
       {
